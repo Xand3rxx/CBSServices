@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="CB & S Cleaning Service Limited main business focus is in janitorial, façade cleaning, fumigation, post-construction cleaning, floor treatment (marble, granite, terrazzo, vitrified tiles and wooden floors) and facilities management." />
+    <meta name="description" content="C.B & S Cleaning Service Limited main business focus is in janitorial, façade cleaning, fumigation, post-construction cleaning, floor treatment (marble, granite, terrazzo, vitrified tiles and wooden floors) and facilities management." />
     <meta name="keywords" content="Home-cleaning, Fumigation, Cleaning-services, Facility-management" />
     <meta name="email" content="info@cbs-services.com.ng" />
     <meta name="website" content="http://www.cbs-services.com.ng" />
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title') | {{ config('app.name', 'Laravel') }}</title>
+    <title>@yield('title') | {{ config('app.name', 'C.B & S Cleaning Service Limited') }}</title>
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/images/logo.ico') }}">
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
@@ -30,6 +30,20 @@
 </head>
 <body>
 
+<style>
+@media (min-width: 600px) and (max-width: 1200px) {
+    .slot-holder, .rev_slider_wrapper, .tp-simpleresponsive, .tp-revslider-mainul, .tp-fullwidth-forcer, .rev_slider {
+        width: 725px !important;
+        height: 620px !important;
+    }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .slot-holder, .rev_slider_wrapper, .tp-simpleresponsive, .tp-revslider-mainul, .tp-fullwidth-forcer, .rev_slider {
+        width: 400px !important;
+        height: 333px !important;
+    }
+}
+</style>
     <!--loader-->
 		<div id="preloader">
 			<div class="sk-circle">
@@ -70,10 +84,11 @@
 		<!-- imagesloaded Js -->
 		<script src="{{ asset('assets/js/imagesloaded.pkgd.min.js') }}" type="text/javascript"></script>
 		<!-- masonry,isotope Effect Js -->
-		<script src="{{ asset('assets/js/imagesloaded.pkgd.min.js') }}" type="text/javascript"></script>
+		{{-- <script src="{{ asset('assets/js/imagesloaded.pkgd.min.js') }}" type="text/javascript"></script> --}}
 		<script src="{{ asset('assets/js/isotope.pkgd.min.js') }}" type="text/javascript"></script>
 		<script src="{{ asset('assets/js/masonry.pkgd.min.js') }}" type="text/javascript"></script>
 		<script src="{{ asset('assets/js/jquery.appear.js') }}" type="text/javascript"></script>
+		<script type="text/javascript" src="{{ asset('assets/js/jquery.revolution.js') }}"></script>
 
 		<!-- revolution Js -->
 		<script type="text/javascript" src="{{ asset('assets/js/jquery.themepunch.tools.min.js') }}"></script>
@@ -82,11 +97,11 @@
 		<script type="text/javascript" src="{{ asset('assets/extensions/revolution.extension.layeranimation.min.js') }}"></script>
 		<script type="text/javascript" src="{{ asset('assets/extensions/revolution.extension.navigation.min.js') }}"></script>
 		<script type="text/javascript" src="{{ asset('assets/extensions/revolution.extension.parallax.min.js') }}"></script>
-		<script type="text/javascript" src="{{ asset('assets/js/jquery.revolution.js') }}"></script>
 		<!-- custom Js -->
 		<script src="{{ asset('assets/js/custom.js') }}" type="text/javascript"></script>
 		<script src="{{ asset('assets/js/custom1.js') }}" type="text/javascript"></script>
         <script src="{{ asset('assets/js/sweetalert2.min.js') }}"></script>
+
         <script>
             function displayMessage(message, type)
             {
@@ -94,7 +109,7 @@
                     toast: true,
                     position: 'top-end',
                     showConfirmButton: false,
-                    timer: 8000,
+                    timer: 50000,
                     timerProgressBar: true,
                     didOpen: (toast) => {
                         toast.addEventListener('mouseenter', Swal.stopTimer)

@@ -71,7 +71,7 @@
                                 <i class="fa fa-phone"></i>
                                 <p>
                                     Call Us
-                                    <span> +234 809 641 5395</span>
+                                    <span> +234 817 341 1535 <br> +234 809 641 5395 </span>
                                 </p>
                             </li>
                             <li>

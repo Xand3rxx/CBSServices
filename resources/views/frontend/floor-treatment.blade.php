@@ -51,7 +51,7 @@
 
                     </div>
 
-                    <div class="pricing-2 columns_padding_25 pricing-style2" id="pricing_table2">
+                    {{-- <div class="pricing-2 columns_padding_25 pricing-style2" id="pricing_table2">
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12 col-sm-12 col-xs-12 mb-xs-30">
@@ -82,7 +82,7 @@
                             </div>
                             <!-- row end -->
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
