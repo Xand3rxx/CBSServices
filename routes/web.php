@@ -21,7 +21,7 @@ Route::get('/', function () {
 })->name('index');
 Auth::routes([
     'login'    => true,
-    'register' => false,
+    'register' => true,
     'logout'   => true,
     'reset'    => false,   // for resetting passwords
     'confirm'  => false,  // for additional password confirmations
@@ -31,10 +31,11 @@ Route::resource('booking',      BookingController::class);
 Route::resource('contact',      ContactController::class);
 Route::get('cbs-dashboard',     [AdminController::class, 'index'])->name('cbs-dashboard');
 Route::get('cbs-bookings',      [AdminController::class, 'bookings'])->name('cbs-bookings');
+Route::get('cbs-contacts',      [AdminController::class, 'contacts'])->name('cbs-contacts');
 Route::get('cbs-settings',      [AdminController::class, 'settings'])->name('cbs-settings');
 Route::get('cbs-users',         [AdminController::class, 'users'])->name('cbs-users');
 Route::patch('cbs-profile-update',[AdminController::class, 'updateProfile'])->name('cbs-profile-update');
 Route::put('cbs-password-update',[AdminController::class, 'changePassword'])->name('cbs-password-update');
 Route::get('/{page}',           [App\Http\Controllers\Frontend\PageController::class, '__invoke'])
 ->name('page')
-->where('page', 'about|contact|services|fumigation|facility-management|floor-treatment');
+->where('page', 'about|contact-us|services|fumigation|facility-management|floor-treatment');

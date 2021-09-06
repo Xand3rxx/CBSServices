@@ -107,7 +107,7 @@
                             <a href="{{ route('page', 'services') }}">Services</a>
                         </li>
                         <li>
-                            <a href="{{ route('page', 'contact') }}">Contact us</a>
+                            <a href="{{ route('page', 'contact-us') }}">Contact us</a>
                         </li>
                     </ul>
                 </div>

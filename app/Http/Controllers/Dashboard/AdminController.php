@@ -42,7 +42,20 @@ class AdminController extends Controller
     {
         //Return all services booked
         return view('dashboard.bookings', [
-            'services'  => \App\Models\Booking::latest('created_at')->get(),
+            'services'  => \App\Models\Booking::latest()->get(),
+        ]);
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function contacts()
+    {
+        //Return authenticated user profile details
+        return view('dashboard.contacts', [
+            'contacts'  =>  \App\Models\Contact::latest()->get(),
         ]);
     }
 

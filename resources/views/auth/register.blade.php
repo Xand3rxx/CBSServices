@@ -1,84 +1,88 @@
 @extends('layouts.auth')
 @section('title', 'Registration')
 @section('content')
-<div class="row g-0 app-auth-wrapper">
-    <div class="col-12 col-md-7 col-lg-6 auth-main-col text-center p-5">
-        <div class="d-flex flex-column align-content-end">
-            <div class="app-auth-body mx-auto">
-                <div class="app-auth-branding mb-4"><a class="app-logo" href="#"><img class="logo-icon me-2" src="{{ asset('assets/images/logo.png') }}" alt="logo"></a></div>
-                <h2 class="auth-heading text-center mb-4">Sign up to Portal</h2>
 
-                <div class="auth-form-container text-start mx-auto">
-                    <form class="auth-form auth-signup-form" method="POST" action="{{ route('register') }}">
-                        @csrf
-                        <div class="email mb-3">
-                            <label class="sr-only" for="name">Your Name</label>
-                            <input type="text" class="form-control signup-name @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" placeholder="Full name" required>
-                            @error('name')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                            @enderror
-                        </div>
-                        <div class="email mb-3">
-                            <label class="sr-only" for="email">Your Email</label>
-                            <input id="email" type="email" class="form-control signup-email @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" placeholder="Email">
-                            @error('email')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                            @enderror
-                        </div>
-                        <div class="password mb-3">
-                            <label class="sr-only" for="signup-password">Password</label>
-                            <input id="password" type="password" class="form-control signup-password @error('password') is-invalid @enderror" name="password" required autocomplete="new-password" placeholder="Create a password">
-                            <small style="font-size: 10px;" class="form-text text-muted">Password must be 8 characters at least.</small>
-                            @error('password')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                            @enderror
-                        </div>
-                        <div class="password mb-3">
-                            <label class="sr-only" for="password_confirmation">Password</label>
-                            <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="Confirm new password" required autocomplete="new-password">
-                        </div>
-
-                        <div class="text-center">
-                            <button type="submit" class="btn app-btn-primary w-100 theme-btn mx-auto">Sign Up</button>
-                        </div>
-                    </form><!--//auth-form-->
-
-                    <div class="auth-option text-center pt-5">Already have an account? <a class="text-link" href="login.html" >Log in</a></div>
-                </div><!--//auth-form-container-->
-
-
-
-            </div><!--//auth-body-->
-
-            <footer class="app-auth-footer">
-                <div class="container text-center py-3">
-                <small class="copyright">© {{ date('Y') }} C.B & S Cleaning Services. All rights reserved.</small>
-
+<div class="content content-fixed content-auth">
+    <div class="container">
+        <div class="media align-items-stretch justify-content-center ht-100p">
+        <div class="sign-wrapper mg-lg-r-50 mg-xl-r-60">
+            <div class="pd-t-20 wd-100p">
+            <h4 class="tx-color-01 mg-b-5">Create New Account</h4>
+            <p class="tx-color-03 tx-16 mg-b-40">It's free to signup and only takes a minute.</p>
+            <form class="auth-form auth-signup-form" method="POST" action="{{ route('register') }}">
+                @csrf
+                <div class="form-group">
+                    <label>First Name</label>
+                    <input type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" placeholder="Enter your Full name" required>
+                    @error('name')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
                 </div>
-            </footer><!--//app-auth-footer-->
-        </div><!--//flex-column-->
-    </div><!--//auth-main-col-->
-    <div class="col-12 col-md-5 col-lg-6 h-100 auth-background-col">
-        <div class="auth-background-holder">
-        </div>
-        <div class="auth-background-mask"></div>
-        <div class="auth-background-overlay p-3 p-lg-5">
-            <div class="d-flex flex-column align-content-end h-100">
-                <div class="h-100"></div>
-                <div class="overlay-content p-3 p-lg-4 rounded">
-                    <h5 class="mb-3 overlay-title">Create New Account</h5>
-                    <div>It's free to signup and only takes a minute.</div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" placeholder="Enter your email address">
+                    @error('email')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
+                </div>
+                <div class="form-group">
+                    <div class="d-flex justify-content-between mg-b-5">
+                    <label class="mg-b-0-f">Password</label>
+                    </div>
+                    <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password" placeholder="Enter your password">
+                    <small style="font-size: 10px;" class="form-text text-muted">Password must be 8 characters at least.</small>
+                    @error('password')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
+                </div>
+
+                <div class="form-group">
+                    <div class="d-flex justify-content-between mg-b-5">
+                    <label class="mg-b-0-f">Confirm Password</label>
+                    </div>
+                    <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="Confirm your password" required autocomplete="new-password">
+                </div>
+
+                <div class="form-group tx-12">
+                    By clicking <strong>Create an account</strong> below, you agree to our terms of service and privacy statement.
+                </div><!-- form-group -->
+
+                <button type="submit" class="btn btn-brand-02 btn-block">Create Account</button>
+            </form>
+            <div class="divider-text">or</div>
+            <div class="tx-13 mg-t-20 tx-center">Already have an account? <a href="{{ route('login') }}">Sign In</a></div>
+            </div>
+        </div><!-- sign-wrapper -->
+        <div class="media-body pd-y-30 pd-lg-x-50 pd-xl-x-60 align-items-center d-none d-lg-flex pos-relative">
+            <div class="mx-lg-wd-500 mx-xl-wd-550">
+            <!-- <img src="assets/img/ibn-client-help.jpeg" class="img-fluid" alt=""> -->
+            <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{{ asset('assets/images/bg_88.jpg') }}" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{{ asset('assets/images/banner/slider2.jpg') }}" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{{ asset('assets/images/banner/slider1.jpg') }}" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{{ asset('assets/images/service/img_5.jpg') }}" class="d-block w-100" alt="...">
+                    </div>
                 </div>
             </div>
-        </div><!--//auth-background-overlay-->
-    </div><!--//auth-background-col-->
-
-</div><!--//row-->
+            </div>
+            <div class="pos-absolute b-0 r-0 tx-12"></div>
+        </div><!-- media-body -->
+        </div><!-- media -->
+    </div><!-- container -->
+</div><!-- content -->
 
 @endsection

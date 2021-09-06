@@ -1,32 +1,39 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-
+<html lang="en">
 <head>
-	<title>@yield('title') | {{ config('app.name', 'C.B & S Cleaning Service Limited') }}</title>
-	<!-- Meta -->
-	<meta charset="utf-8">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="C.B & S Cleaning Service Limited main business focus is in janitorial, façade cleaning, fumigation, post-construction cleaning, floor treatment (marble, granite, terrazzo, vitrified tiles and wooden floors) and facilities management." ">
-    <meta name="keywords " content="Home-cleaning, Fumigation, Cleaning-services, Facility-management " />
-    <meta name="email " content="info@cbs-services.com.ng " />
-    <meta name="website " content="http://www.cbs-services.com.ng " />
-    <!-- CSRF Token -->
-    <meta name="csrf-token " content="{{ csrf_token() }} ">
+	<meta name="description" content="C.B & S Cleaning Service Limited main business focus is in janitorial, façade cleaning, fumigation, post-construction cleaning, floor treatment (marble, granite, terrazzo, vitrified tiles and wooden floors) and facilities management.">
+    <meta name="keywords" content="Home-cleaning, Fumigation, Cleaning-services, Facility-management" />
+    <meta name="email" content="info@cbs-services.com.ng" />
+    <meta name="website" content="http://www.cbs-services.com.ng" />
+	<title>@yield('title') | {{ config('app.name', 'C.B & S Cleaning Service Limited') }}</title>
 
-    <link rel="shortcut icon " type="image/x-icon " href="{{ asset( 'assets/images/logo.ico') }}">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/images/logo.ico') }}">
 
-    <!-- FontAwesome JS-->
-    <script defer src="{{ asset( 'assets/dashboard/plugins/fontawesome/js/all.min.js') }} "></script>
+    <!-- vendor css -->
+    <link href="{{ asset('assets/dashboard/lib/fontawesome/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/dashboard/lib/ionicons/css/ionicons.min.css') }}" rel="stylesheet">
 
-    <!-- App CSS -->
-    <link id="theme-style " rel="stylesheet" href="{{ asset('assets/dashboard/css/portal.css') }} ">
-    <link rel="stylesheet" href="{{ asset('assets/dashboard/datatables/dataTables.bs4.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/dashboard/datatables/dataTables.bs4-custom.css') }}" />
+    <!-- DashForge CSS -->
+    <link rel="stylesheet" href="{{ asset('assets/dashboard/assets/css/dashforge.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/dashboard/assets/css/dashforge.demo.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/dashboard/assets/css/dashforge.dashboard.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/dashboard/assets/css/jquery.magnify.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/dashboard/assets/datatables/dataTables.bs4.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/dashboard/assets/datatables/dataTables.bs4-custom.css') }}" />
+    <link href="{{ asset('assets/dashboard/lib/prismjs/themes/prism-vs.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.5/css/buttons.dataTables.min.css">
+
+    @yield('css')
+    @yield('styles')
+
 </head>
 
-<body class="app ">
+<body>
     <style>
         .logo-icon {
             width: 155px !important;
@@ -44,9 +51,9 @@
         input.dt-button {
             font-size: inherit !important;
             color: #fff !important;
-            background-color: #DAA106 !important;
-            background: linear-gradient(to bottom, rgb(218 161 6) 0%, rgb(218 161 6) 100%);
-            border-color: #DAA106 !important;
+            background-color: #CC5500 !important;
+            background: linear-gradient(to bottom, rgb(204 85 0) 0%, rgb(204 85 0) 100%);
+            border-color: #CC5500 !important;
             display: inline-block !important;
             font-weight: 400 !important;
             text-align: center !important;
@@ -70,46 +77,42 @@
         a.dt-button:hover,
         input.dt-button:hover {
             color: #fff !important;
-            background-color: #FEB20D !important;
-            background: linear-gradient(to bottom, rgb(233 125 31) 0%, rgb(233 125 31) 100%);
-            border-color: #DAA106 !important;
+            background-color: #CC5500 !important;
+            background: linear-gradient(to bottom, rgb(204 85 0) 0%, rgb(204 85 0) 100%);
+            border-color: #CC5500 !important;
         }
 
         div.dataTables_wrapper div.dataTables_info {
             margin-left: 8px !important;
-            color: #DAA106;
+            color: #CC5500;
         }
 
         .page-item.active .page-link {
             z-index: 3;
             color: #fff;
-            background-color: #DAA106;
-            border-color: #DAA106;
+            background-color: #CC5500;
+            border-color: #CC5500;
         }
     </style>
-    @include('layouts.partials._dashboard_header')
 
-    <div class="app-wrapper ">
-	    <div class="app-content pt-3 p-md-3 p-lg-4 ">
-            @yield('content')
-        </div><!--//app-content-->
+    @include('layouts.partials._dashboard_sidebar')
 
-        <footer class="app-footer ">
-            <div class="container text-center py-3 ">
-                <small class="copyright ">© {{ date('Y') }} C.B & S Cleaning Services. All rights reserved.</small>
-            </div>
-        </footer><!--//app-footer-->
-    </div><!--//app-wrapper-->
+    <div class="content ht-100v pd-0">
+        @include('layouts.partials._dashboard_header')
+        @yield('content')
+    </div>
 
-    <!-- Javascript -->
-    <script src="{{ asset( 'assets/dashboard/js/jquery.min.js') }}"></script>
-    <script src="{{ asset( 'assets/dashboard/plugins/popper.min.js') }} "></script>
-    <script src="{{ asset( 'assets/dashboard/plugins/bootstrap/js/bootstrap.min.js') }} "></script>
-
-    <!-- Page Specific JS -->
-    <script src="{{ asset('assets/dashboard/js/app.js') }} "></script>
-    <script src="{{ asset('assets/dashboard/datatables/dataTables.min.js') }}"></script>
-    <script src="{{ asset('assets/dashboard/datatables/dataTables.bootstrap.min.js') }}"></script>
+    <script src="{{ asset('assets/dashboard/lib/jquery/jquery.min.js') }}"></script>
+    <script src="{{ asset('assets/dashboard/lib/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/dashboard/assets/js/dashforge.js') }}"></script>
+    <script src="{{ asset('assets/dashboard/assets/js/dashforge.aside.js') }}"></script>
+    <script src="{{ asset('assets/dashboard/assets/js/dashforge.settings.js') }}"></script>
+    <script src="{{ asset('assets/dashboard/assets/js/dashforge.sampledata.js') }}"></script>
+    <script src="{{ asset('assets/dashboard/lib/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
+    <script src="{{ asset('assets/dashboard/lib/feather-icons/feather.min.js') }}"></script>
+    <script src="{{ asset('assets/dashboard/assets/datatables/dataTables.min.js') }}"></script>
+    <script src="{{ asset('assets/dashboard/assets/datatables/dataTables.bootstrap.min.js') }}"></script>
+    <script src="{{ asset('assets/client/js/moment.js') }}"></script>
     <script src="https://cdn.datatables.net/buttons/1.6.5/js/dataTables.buttons.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
@@ -124,7 +127,7 @@
                 toast: true,
                 position: 'top-end',
                 showConfirmButton: false,
-                timer: 50000,
+                timer: 8000,
                 timerProgressBar: true,
                 didOpen: (toast) => {
                     toast.addEventListener('mouseenter', Swal.stopTimer)
@@ -163,8 +166,9 @@
         });
     </script>
 
+    @yield('scripts')
     @stack('scripts')
 
 </body>
-</html>
 
+</html>

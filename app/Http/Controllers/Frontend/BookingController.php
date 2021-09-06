@@ -58,8 +58,13 @@ class BookingController extends Controller
         }, 3);
 
         if($serviceBooking){
-            //Send booking mail
+            //Send confirmation booking mail to client
             Mail::to($verifiedData['email'])->send(new \App\Mail\Booking($verifiedData));
+
+            //Send confirmation booking mail to `feyikemi.odunuga@cbs-services.com.ng`
+            Mail::to('feyikemi.odunuga@cbs-services.com.ng')->send(new \App\Mail\AdminBooking($verifiedData));
+
+            //Return success message to user
             return back()->with('success', 'Congratulations! Your service booking was successful.');
         }else{
             return back()->with('error', 'Sorry! An error occured while trying to book your service.');

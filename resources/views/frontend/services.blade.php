@@ -159,6 +159,11 @@
                         <p>Feel free to call us directly or simply complete our form below and we will follow up with you.</p>
                     </div>
                     <!-- Contact FORM -->
+                    @if (Session::has('success'))
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <strong style="color: #333 !important">{{ Session::get('success') }}</strong>
+                    </div>
+                    @endif
                     <form class="quote-form" id="contact" method="post" action="{{ route('booking.store') }}">
                         @csrf
                         <div class="row">

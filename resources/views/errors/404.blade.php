@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'About Us')
+@section('title', '404 (Page Not Found)')
 @section('content')
 
 <!-- Intro Section -->
@@ -22,7 +22,7 @@
       <!--Footer Info -->
       <div class="row text-center">
         <div class="col-lg-6 offset-lg-3"> <strong class="big-font">4<i class="ion-android-sad"></i>4</strong>
-          <h2>Page Not Found..</h2>
+          <h2>Page Not Found...</h2>
           <a href="{{ route('index') }}" class="btn-text mt-15">Back to home page</a> </div>
       </div>
     </div>

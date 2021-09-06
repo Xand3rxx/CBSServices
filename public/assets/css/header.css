@@ -713,7 +713,7 @@ ul.menu-col li a:hover, ul.menu-col li a:focus {
 		display: none;
 		width:100%;
 		height: 78px;
-		background:#daa106;
+		background:#CC5500;
 		position:absolute;
 		top:0;
 		left:0;
@@ -1041,7 +1041,7 @@ nav.navbar.bootsnav ul.nav > li > a.custom-btn {
 		padding: 0
 	}
 	.main_nav ul ul li {
-		background:#daa106;
+		background:#CC5500;
 		border-bottom:solid 1px rgba(224, 224, 224, 0.23);
 	}
 	.main_nav ul ul li a {

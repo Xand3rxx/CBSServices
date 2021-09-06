@@ -548,7 +548,7 @@ button:focus {
 	display: block;
 }
 .color {
-	color: #daa106;
+	color: #CC5500;
 }
 .light-color * {
 	color: #fff;
@@ -692,7 +692,7 @@ button:focus {
 	transition: all 0.4s linear 0s;
 }
 .v-line {
-	border-left: 3px solid #daa106;
+	border-left: 3px solid #CC5500;
 	padding-left: 20px;
 }
 .big-icon {
@@ -704,7 +704,7 @@ button:focus {
 	display: block;
 }
 .dark-bg, .hover-bg:hover {
-	background: #daa106;
+	background: #CC5500;
 }
 .black-bg {
 	background: #2C2C2C;
@@ -915,7 +915,7 @@ figure.effect-zoe figcaption {
 	bottom: 0;
 	padding: 1em;
 	height: 4.45em;
-	background: #daa106;
+	background: #CC5500;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 	-webkit-transform: translate3d(0, 100%, 0);
@@ -1020,7 +1020,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 	color: #fff;
 }
 .content-carousel .owl-controls .owl-nav .owl-prev, .content-carousel .owl-controls .owl-nav .owl-next, .image-slider .owl-controls .owl-nav .owl-prev, .image-slider .owl-controls .owl-nav .owl-next, .fullwidth-slider .owl-controls .owl-nav .owl-prev, .fullwidth-slider .owl-controls .owl-nav .owl-next, .nf-carousel-theme .owl-controls .owl-nav .owl-prev, .nf-carousel-theme .owl-controls .owl-nav .owl-next {
-	background: #daa106;
+	background: #CC5500;
 	color: #fff;
 	display: block;
 	top: 50%;
@@ -1260,8 +1260,8 @@ figure {
 }
 .pagination-nav ul li a {
 	display: block;
-	border: 1px solid #daa106;
-	color: #daa106;
+	border: 1px solid #CC5500;
+	color: #CC5500;
 	height: 36px;
 	width: 36px;
 	line-height: 34px;
@@ -1269,7 +1269,7 @@ figure {
 	font-size: 14px;
 }
 .pagination-nav ul li.active a, .pagination-nav ul li:hover a {
-	background: #daa106;
+	background: #CC5500;
 	color: #fff;
 }
 /* ----------------------------------------------------------------------*/
@@ -1293,13 +1293,13 @@ figure {
 	margin-bottom: 0;
 }
 .widget-search input[type="text"]:focus {
-	border: 1px solid #daa106;
+	border: 1px solid #CC5500;
 }
 .blog-post-hr input[type="text"], .blog-post-hr textarea {
 	border: 1px solid #DEDEDE;
 }
 .blog-post-hr input[type="text"]:focus, .blog-post-hr textarea:focus {
-	border: 1px solid #daa106;
+	border: 1px solid #CC5500;
 }
 .widget-search input[type="submit"] {
 	background-color: rgba(0,0,0,0);
@@ -1350,7 +1350,7 @@ figure {
 	text-transform: capitalize;
 }
 .sidebar-widget ul li a:hover {
-	color: #daa106;
+	color: #CC5500;
 }
 .widget-tag {
 	display: inline-table;
@@ -1365,11 +1365,11 @@ figure {
 .widget-tag li a {
 	padding: 4px 10px;
 	display: block;
-	border: 1px solid #daa106;
-	color: #daa106;
+	border: 1px solid #CC5500;
+	color: #CC5500;
 }
 .sidebar-widget .widget-tag li a:hover {
-	background: #daa106;
+	background: #CC5500;
 	color: #fff;
 }
 .sidebar-widget .widget-post {
@@ -1864,7 +1864,7 @@ figure {
 	top: -36px;
 	width: 70px;
 	height: 70px;
-	border: 2px solid #daa106;
+	border: 2px solid #CC5500;
 }
 .right-pos {
 	left: auto;
@@ -2168,8 +2168,8 @@ figure {
 	margin: 0 0 35px 36px
 }
 .ui-timeline .tl-item .tl-body .tl-entry .btn-primary {
-	background-color: #daa106;
-	border-color: #daa106;
+	background-color: #CC5500;
+	border-color: #CC5500;
 	padding: 10px 12px;
 }
 .ui-timeline .tl-item .tl-body .tl-time {
@@ -2370,7 +2370,7 @@ figure {
 	text-transform: capitalize;
 }
 .faq .collape-plus, .panel-title a i {
-	background: #daa106;
+	background: #CC5500;
 	color: #fff;
 }
 .panel-title a[aria-expanded="true"] .fa-plus:before {
@@ -2385,7 +2385,7 @@ figure {
 	display: block;
 }
 .big-font i {
-	color: #daa106;
+	color: #CC5500;
 }
 .page-404 {
 	border-top: 1px solid #f1f1f1;
@@ -2410,7 +2410,7 @@ figure {
 	font-size: 13px;
 }
 .post-meta span > a > i {
-	color: #daa106;
+	color: #CC5500;
 }
 .blog-post .post-meta span, .comment-list .post-meta span {
 	margin-right: 3px;
@@ -2435,7 +2435,7 @@ figure {
 .lead-point li {
 	list-style: none;
 	margin-bottom: 10px;
-	color: #daa106;
+	color: #CC5500;
 	font-weight: 600;
 }
 .lead-point li i {
@@ -2496,7 +2496,7 @@ figure {
 	visibility: visible;
 }
 .blog-post .post-more-link:hover .btn-color-line {
-	background: #daa106;
+	background: #CC5500;
 	color: #fff;
 }
 .blog-post .icons-hover-black a {
@@ -2572,7 +2572,7 @@ figure {
 }
 .blog-post .fa-tag {
 	padding-right: 10px;
-	color: #daa106;
+	color: #CC5500;
 }
 .post-author h6 {
 	margin-top: 0px;
@@ -2648,7 +2648,7 @@ figure {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	background: #daa106;
+	background: #CC5500;
 	color: #fff;
 }
 .post-media {
@@ -2732,7 +2732,7 @@ figure {
 	border: 0;
 }
 .color-primary, a.color-primary {
-	color: #daa106;
+	color: #CC5500;
 }
 .card .card-action > a {
 	margin-right: 20px;
@@ -2761,7 +2761,7 @@ figure {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: #daa106;
+	background-color: #CC5500;
 	height: 220px;
 }
 .ui-input-group > input {
@@ -2794,7 +2794,7 @@ figure {
 	width: 0;
 	bottom: 1px;
 	position: absolute;
-	background: #daa106;
+	background: #CC5500;
 	-webkit-transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 	-moz-transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 	transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
@@ -2808,7 +2808,7 @@ figure {
 	width: 0;
 	bottom: 1px;
 	position: absolute;
-	background: #daa106;
+	background: #CC5500;
 	-webkit-transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 	-moz-transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 	transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
@@ -2834,7 +2834,7 @@ label {
 }
 .ui-input-group>input:focus ~ label, .ui-input-group>textarea:focus ~
 label {
-	color: #daa106;
+	color: #CC5500;
 }
 .ui-input-group>input:focus ~ .input-bar:before, .ui-input-group>input:focus ~
 .input-bar:after {
@@ -2857,7 +2857,7 @@ label {
 	width: 20px;
 	height: 20px;
 	display: inline-block;
-	border: 1px solid #daa106;
+	border: 1px solid #CC5500;
 	top: 4px;
 	position: relative;
 	margin-right: 10px;
@@ -2865,7 +2865,7 @@ label {
 .custom-check:before {
 	content: "";
 	font-family: "Ionicons";
-	color: #daa106;
+	color: #CC5500;
 	font-size: 24px;
 	position: absolute;
 	top: -3px;
@@ -2921,7 +2921,7 @@ label {
 	top: 0px;
 	right: 0px;
 	font-size: 18px;
-	background: #daa106;
+	background: #CC5500;
 	line-height: 46px;
 	border-radius: 0;
 	width: 49px;
@@ -3045,7 +3045,7 @@ form .error {
 	border-radius: 0;
 }
 .contact-form input[type="text"]:focus, .contact-form textarea:focus {
-	border: 1px solid #daa106;
+	border: 1px solid #CC5500;
 }
 .i-block {
 	display: inline-block;
@@ -3062,11 +3062,11 @@ form .error {
 	display: block;
 }
 .contact .icon-circle {
-	border: 1px solid #daa106;
-	color: #daa106;
+	border: 1px solid #CC5500;
+	color: #CC5500;
 }
 .mapmarker .ion-ios-location {
-	color: #daa106;
+	color: #CC5500;
 	font-size: 50px;
 }
 @media (max-width: 767px) {
@@ -3806,7 +3806,7 @@ transform: scale(1);
 .chooose-box strong i {
 	font-size: 20px;
 	margin-right: 10px;
-	color: #daa106;
+	color: #CC5500;
 }
 #blog-section {
 	position: relative;
@@ -4165,7 +4165,7 @@ transform: scale(1);
     background: transparent;
 }
 .gallery-heading h4 a:hover {
-	color: #daa106;
+	color: #CC5500;
 }
 .gallery-heading {
 	transition: all 0.2s linear 0s;
@@ -4943,7 +4943,7 @@ transform: scale(1);
 }
 /*Contact section*/
 .bottom-section {
-	background: #daa106;
+	background: #CC5500;
 }
 .contact_block-text {
 	padding-top: 15px;
@@ -5036,7 +5036,7 @@ transform: scale(1);
 	color: #fff;
 }
 .section-split-right h2 {
-	color: #daa106;
+	color: #CC5500;
 }
 .bg-color3 {
 	background: #6aaf08;
@@ -5158,7 +5158,7 @@ transform: scale(1);
 	padding: 25px 30px 20px 30px;
 }
 .accordion-box-2 .accordion.open .accordion-title {
-	background: #daa106;
+	background: #CC5500;
 }
 
 .accordion-box-2 .accordion .accordion-title {
@@ -5238,12 +5238,12 @@ transform: scale(1);
 	left: 0;
 	width: 85px;
 	height: 85px;
-	border: 1px solid #daa106;
+	border: 1px solid #CC5500;
 	border-radius: 50%;
 	background: transparent;
 	transition: all 0.4s linear 0s;
 	-webkit-transition: all 0.4s linear 0s;
-	background: #daa106;
+	background: #CC5500;
 }
 .featured-icon-wrap li:nth-child(2n) .feature-icon-wrap:after {
 	background: #b4c505;
@@ -6003,7 +6003,7 @@ filter: alpha(opacity=0);
 	padding: 25px 30px 20px 30px;
 }
 .accordion-box-2 .accordion.open .accordion-title {
-	background: #daa106;
+	background: #CC5500;
 }
 
 .accordion-box-2 .accordion .accordion-title {
